@@ -10,10 +10,16 @@
       type="image/x-icon"
     />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="https://kit.fontawesome.com/58c019b94a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/58c019b94a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <style>
       .sora {
         font-family: "Sora", "serif";
@@ -21,8 +27,10 @@
     </style>
   </head>
   <body class="sora">
-    <header class="px-6 py-3 lg:py-6 lg:px-36 bg-gradient-to-b from-white to-[#EFEBE3]">
-      <nav class="flex items-center justify-between">
+    <header
+      class="px-6 lg:pt-6 lg:px-36 bg-gradient-to-b from-white to-[#EFEBE3]"
+    >
+      <nav class="flex items-center justify-between py-3 lg:py-0">
         <!-- Logo  -->
         <div>
           <img
@@ -35,24 +43,49 @@
         <!-- nav links -->
         <div class="hidden lg:block text-xl">
           <ul class="flex gap-3">
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a class="hover:text-green-600" href="#">Product</a></li>
+            <li><a class="hover:text-green-600" href="#">Services</a></li>
+            <li><a class="hover:text-green-600" href="#">Contact us</a></li>
           </ul>
         </div>
         <!-- user -->
         <div class="hidden lg:block">
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-magnifying-glass text-2xl"></i>
-                <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                <button class=" text-xl px-6 py-2 border-2 border-green-600 rounded-lg hover:bg-green-600 hover:text-white">Login</button>
-                <button class=" text-xl px-6 py-2 border-2 border-green-600 rounded-lg bg-green-600 hover:bg-transparent text-white hover:text-black">Register</button>
-            </div>
+          <div class="flex items-center gap-3">
+            <i
+              class="fa-solid fa-magnifying-glass text-2xl hover:scale-110 hover:cursor-pointer"
+            ></i>
+            <i
+              class="fa-solid fa-cart-shopping text-2xl hover:scale-110 hover:cursor-pointer"
+            ></i>
+            <button
+              class="text-xl px-6 py-2 border-2 border-green-600 rounded-lg hover:bg-green-600 hover:text-white hover:cursor-pointer"
+            >
+              Login
+            </button>
+            <button
+              class="text-xl px-6 py-2 border-2 border-green-600 rounded-lg bg-green-600 hover:bg-transparent text-white hover:text-black hover:cursor-pointer"
+            >
+              Register
+            </button>
+          </div>
         </div>
         <div class="lg:hidden">
-            <i class="fa-solid fa-bars text-2xl"></i>
+          <i class="fa-solid fa-bars text-2xl"></i>
         </div>
       </nav>
+      <hr class="lg:hidden border-1 border-green-600" />
+      <!-- Banner Section -->
+      <div class="mt-12 lg:mt-20 text-center lg:max-w-[827px] m-auto">
+        <h1 class="text-5xl font-semibold leading-normal">
+          Freshness <span class="text-green-600">You Can Count</span> On, Prices
+          You’ll Love!
+        </h1>
+        <p class="text-xl mt-4 lg:8">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+        <img src="assets/hero-vegetables.png" alt="" />
+      </div>
     </header>
   </body>
 </html>
